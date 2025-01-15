@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "@firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAqqj_uoJNYIOk-RCz_j-gHOct-rwgss4Y",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: "catalog-pdf-builder.firebaseapp.com",
   projectId: "catalog-pdf-builder",
   storageBucket: "catalog-pdf-builder.firebasestorage.app",
